@@ -1,12 +1,12 @@
 import { useState } from 'react';
 
-type FormErrors = {
+export type FormErrors = {
     email?: string;
     password?: string;
     username?: string;
 }
 
-type Fields = {
+export type Fields = {
     email?: string;
     password?: string;
     username?: string;
@@ -48,3 +48,5 @@ export const useValidation = () => {
 
     return { errors, validateFields, setErrors };
 };
+
+
